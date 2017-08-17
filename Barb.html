@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			#flip-checkbox-3
+			{
+				width: 100%;
+            
+			}
+            .todolist li .ui-li-aside{
+                font-size: 14px;
+                margin-left: 10px;
+                margin-top: 0;
+            }
+            .todocheckbox{
+                position: relative!important;
+                display: block;
+                float: left;
+                margin: left
+            }
+            .h2{
+                float: right;             
+            }
+            .todolist li a{
+                font-size: 0;
+            }
+            .todolist li h2{
+                font-size: 18px; 
+                margin-bottom: 0;
+                margin-left: 35px;
+            }
+            .todolist li p{
+                font-size: 14px;
+                margin-left: 25px;
+                margin-top: 0;
+                margin-left: 35px;                
+            }
+            .todocheckbox{
+                margin-top: 8px!important;
+            }
+            .ui-controlgroup-controls {
+                margin: 0 auto!important;
+                font-size: 0;
+            }
+            .edit-button{
+               position: absolute;
+                bottom: 0;    
+            }
+            .ui-controlgroup{
+                text-align: center;
+            }
+                
+		</style>
+    </head>
+    <body>
+        <div data-role="page">
+	       <div data-role="header"><h1>July 31, 2017</h1></div>
+	       <div role="main" class="ui-content">
+				<input type="text" placeholder="Search"/>
+                <div>
+                    <form>
+                        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                            <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6a" value="on" checked="checked">
+                                <label for="radio-choice-h-6a">Completed</label>
+                            <input type="radio" name="radio-choice-h-6" id="radio-choice-h-6b" value="off">
+                                <label for="radio-choice-h-6b">Incomplete</label>
+                        </fieldset>
+                    </form> 
+                </div>
+                    <ul class="todolist" data-role="listview" data-inset="true">
+                        <li>
+                            <a href="index.html">
+                                <input type="checkbox" name="LTP" id="LTP" class="todocheckbox" /><h2>Learn to Program </h2>
+                                <p>School</p>
+                                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <input type="checkbox" name="LTP" id="LTP" class="todocheckbox" /><h2>Finance </h2>
+                                <p>School</p>
+                                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <input type="checkbox" name="LTP" id="LTP" class="todocheckbox" /><h2>Planet Fitness </h2>
+                                <p>Personal</p>
+                                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            </a>
+                        </li>
+                       <li>
+                            <a href="index.html">
+                                <input type="checkbox" name="LTP" id="LTP" class="todocheckbox" /><h2>Grocery List </h2>
+                                <p>Personal</p>
+                                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            </a>
+                        </li>   <li>
+                            <a href="index.html">
+                                <input type="checkbox" name="LTP" id="LTP" class="todocheckbox" /><h2>Leah's BD </h2>
+                                <p>Personal</p>
+                                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            </a>
+                        </li>   
+                        <li>
+                            <a href="index.html">
+                                <input type="checkbox" name="LTP" id="LTP" class="todocheckbox" /><h2>Sent Invites </h2>
+                                <p>Personal</p>
+                                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <input type="checkbox" name="LTP" id="LTP" class="todocheckbox" /><h2>Book Club </h2>
+                                <p>School</p>
+                                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            </a>
+                        </li>                           
+ 
+                    </ul>
+			     </div>
+                <div data-role="footer">
+            </div>
+        </div>
+
+            <button class="ui-btn edit-button">Edit</button>
+    </body>
+</html>
+1 Comment Collapse
